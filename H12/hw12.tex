@@ -97,7 +97,7 @@ Implement the code and examine the truncation error of RK4 on loglog() plots.
 \begin{figure}[H]
 	\centering
 	\subfigure[truncation error]{
-		\includegraphics[width=0.8\linewidth]{error.jpg}
+		\includegraphics[width=0.6\linewidth]{error.jpg}
 	}
 \end{figure}
 Most of the truncation error satisfy $O(h^4)$ level, while further accuracy cannot be reached because of rounding error.
@@ -123,17 +123,59 @@ However, this is not sufficient for convergence, because we must take a good ste
 \end{align} 
 Therefore, $h\in (0,\dfrac{1}{\theta\lambda})$. However, numerical studies show that there could be an even tighter upper bound for stepsize.
 \paragraph{Q3}
-The stationary concentrations are approximately $X=0.097754, C=0.097749
-,S=0.814495$
+The stationary concentrations are approximately $X=9.7754mg\cdot L^{-1}, C=9.7749mg\cdot L^{-1}
+,S=81.4495mg\cdot L^{-1}$
 \begin{figure}[H]
 	\centering
 	\subfigure[solution]{
-		\includegraphics[width=0.8\linewidth]{res.jpg}
+		\includegraphics[width=0.6\linewidth]{res.jpg}
 	}
 \end{figure}
 \paragraph{Q4}
-
-
+\subparagraph{(a)}
+We can substitute $x(t)$ with a guess of $x(t)=e^{\lambda t}$ and that gives,
+\begin{align}
+	(m\lambda^2+k)(e^{\lambda t})=0
+\end{align}
+Since $e^{\lambda t}\ne 0$, we have $\lambda=i\sqrt{\frac{k}{m}}$. So the solution will be a linear combination of $e^{i\sqrt{\frac{k}{m}}t}$ and $e^{-i\sqrt{\frac{k}{m}}t}$.
+\begin{align}
+	x(t)=C_1cos(\sqrt{\frac{k}{m}}t)+C_2sin(\sqrt{\frac{k}{m}}t)
+\end{align}
+With condition that $x(t)=x_0$, $x'(t)=v_0$, we will have,
+\begin{align}
+	x(t)=x_0cos(\sqrt{\frac{k}{m}}t)+v_0sin(\sqrt{\frac{k}{m}}t)
+\end{align}
+\subparagraph{(b)}
+Let $y(t)=x'(t)$, and the second-order ordinary differential equation is transformed into a two-dimensional system of first-order coupled ordinary differential equations.
+\begin{equation}
+	\left\{
+	\begin{aligned}
+		&y'(t)=-\frac{k}{m}x(t)\\
+		&x'(t)=y	
+	\end{aligned}
+	\right.
+\end{equation}
+This is easy to solve with numerical methods.
+\subparagraph{(c)}
+Apply four methods, and we can see that Trapezoidal and Runge-Kutta 4 are two stable methods that can be used to solve this system. Forward-Euler method seems to go too big, and Backward-Euler method seems to shrink to small.
+\begin{figure}[H]
+	\centering
+	\subfigure[Euler method]{
+		\includegraphics[width=0.4\linewidth]{with euler.jpg}
+	}
+	\subfigure[other methods]{
+		\includegraphics[width=0.4\linewidth]{without euler.jpg}
+	}
+\end{figure}
+And also shown below is the phase diagram of the solution.
+\begin{figure}[H]
+	\centering
+	\subfigure[phase diagram]{
+		\includegraphics[width=0.6\linewidth]{phase diagram.jpg}
+	}
+	
+\end{figure}
+Since both Euler methods are $O(h)$ methods, when $h$ is not so small, the error for $x(t)$ and $x'(t)$ accumulates very fast. What's more, as $x(t)$ and $x'(t)$ are dependent on each other, the final solution slips away from accurate ones quickly.
 %-------------------------------------
 %=====================
 \end{document}

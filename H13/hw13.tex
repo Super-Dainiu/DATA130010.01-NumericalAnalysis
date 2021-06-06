@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage}
+\usepackage{rotating}   
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{bm}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{caption2}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{extpfeil}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[subsection]{Remark}
+
+%%
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+%% define new symbols
+\def\bx{\bm{x}}
+\def\bb{\bm{b}}
+\def\ba{\bm{a}}
+\def\bc{\bm{c}}
+\def\bf{\bm{f}}
+\def\by{\bm{y}}
+\def\bu{\bm{u}}
+\def\bv{\bm{v}}
+\def\BW{\bm{W}}
+\def\BA{\bm{A}}
+\def\bz{\bm{z}}
+\def\BZ{\bm{Z}}
+\def\BH{\bm{H}}
+\def\BL{\bm{L}}
+\def\BU{\bm{U}}
+\def\BV{\bm{V}}
+\def\BB{\bm{B}}
+\def\BC{\bm{C}}
+\def\BD{\bm{D}}
+\def\BE{\bm{E}}
+\def\BW{\bm{W}}
+\def\BQ{\bm{Q}}
+\def\BG{\bm{G}}
+\def\BA{\bm{A}}
+\def\BX{\bm{X}}
+\def\BY{\bm{Y}}
+\def\BQ{\bm{Q}}
+\def\BI{\bm{I}}
+\def\BR{\bm{R}}
+
+%% define new brackets
+\def\la{\left\langle}
+\def\ra{\right\rangle}
+\def\ln{\left\|}
+\def\rn{\right\|}
+\def\lb{\left(}
+\def\rb{\right)}
+\def\lsb{\left[}
+\def\rsb{\right]}
+\def\lcb{\left\{}
+\def\rcb{\right\}}
+
+%%
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+%%
+\title{Homework XIII}
+\author{Name: Shao Yanjun, Number: 19307110036}
+
+
+\begin{document}
+\maketitle
+
+%------------------------------------
+\begin{abstract}
+This is Daniel's homework of  "Numerical Algorithms with Case Studies II".
+\end{abstract}
+%-------------------------------------
+%=====================
+\section{Problems}
+\paragraph{Q1}
+The comparison between ode23 and ode23s is plotted below with the solution and stepsize(in semilogy). The running time of ode23 is 0.871743s and ode23s is 0.197925s.
+\begin{figure}[H]
+	\centering
+	\subfigure[Comparison]{
+		\includegraphics[width=0.8\linewidth]{comparison.jpg}
+	}
+\end{figure}
+ode23s have better stepsize choices and termination condition than ode23.
+\paragraph{Q2}
+The second order differential equation could be solved using differential operator.
+\begin{align}
+	-(D^2-1)(u)&=-(D-1)(D+1)(u)\\
+	&=-(D+1)(z)=-e^{-x}D(e^{x}z)
+\end{align}
+\begin{align}
+	\therefore -e^{x}z=x^2e^x-2xe^x+2e^x+C_1\\
+	(D-1)u=-x^2+2x-2+C_1e^{-x}
+\end{align}
+\begin{align}
+	&\therefore D(e^{-x}u)=-x^2e^{-x}+2xe^{-x}-2e^{-x}+C_1e^{-2x}\\
+	&\therefore u=x^2+2+C_1e^{-x}+C_2e^{x}
+\end{align}
+Since $u(0)=0$, $u(1)=1$, we have $C_1=-\dfrac{2}{e^{-1}+1}$, $C_2=-\dfrac{2}{e+1}$. Here is the comparison with my numerical experiments.
+\begin{figure}[H]
+	\centering
+	\subfigure[My result]{
+		\includegraphics[width=0.8\linewidth]{result.jpg}
+	}
+\end{figure}
+\paragraph{Q3}
+The solution is visualized as follows,
+\begin{figure}[H]
+	\centering
+	\subfigure[Solution]{
+		\includegraphics[width=0.8\linewidth]{laplacian.jpg}
+	}
+\end{figure}
+%-------------------------------------
+%=====================
+\end{document}

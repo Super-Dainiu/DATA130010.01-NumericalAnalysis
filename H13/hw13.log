@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.18)  24 MAY 2021 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.18)  4 JUN 2021 20:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**hw12.tex
-(./hw12.tex
+**hw13.tex
+(./hw13.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (d:/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -347,8 +347,8 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count277
 \l__pdf_internal_box=\box53
 )
-(./hw12.aux)
-\openout1 = `hw12.aux'.
+(./hw13.aux)
+\openout1 = `hw13.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
 LaTeX Font Info:    ... okay on input line 85.
@@ -439,63 +439,50 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 8
 6.
 
 (d:/texlive/2020/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-<error.jpg, id=1, 702.625pt x 526.96875pt>
-File: error.jpg Graphic file (type jpg)
-<use error.jpg>
-Package pdftex.def Info: error.jpg  used on input line 101.
-(pdftex.def)             Requested size: 281.85587pt x 211.39487pt.
+<comparison.jpg, id=1, 702.625pt x 526.96875pt>
+File: comparison.jpg Graphic file (type jpg)
+<use comparison.jpg>
+Package pdftex.def Info: comparison.jpg  used on input line 101.
+(pdftex.def)             Requested size: 375.80544pt x 281.86519pt.
  [1
 
-{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./error.jpg>]
-<res.jpg, id=17, 702.625pt x 526.96875pt>
-File: res.jpg Graphic file (type jpg)
-<use res.jpg>
-Package pdftex.def Info: res.jpg  used on input line 132.
-(pdftex.def)             Requested size: 281.85587pt x 211.39487pt.
- [2 <./res.jpg>]
-<with euler.jpg, id=25, 702.625pt x 526.96875pt>
-File: with euler.jpg Graphic file (type jpg)
-<use with euler.jpg>
-Package pdftex.def Info: with euler.jpg  used on input line 165.
-(pdftex.def)             Requested size: 187.89914pt x 140.92455pt.
-<without euler.jpg, id=26, 702.625pt x 526.96875pt>
-File: without euler.jpg Graphic file (type jpg)
-<use without euler.jpg>
-Package pdftex.def Info: without euler.jpg  used on input line 168.
-(pdftex.def)             Requested size: 187.89914pt x 140.92455pt.
-<phase diagram.jpg, id=27, 1927.2pt x 940.51375pt>
-File: phase diagram.jpg Graphic file (type jpg)
-<use phase diagram.jpg>
-Package pdftex.def Info: phase diagram.jpg  used on input line 175.
-(pdftex.def)             Requested size: 281.85587pt x 137.5406pt.
-
-[3 <./with euler.jpg> <./without euler.jpg> <./phase diagram.jpg>] (./hw12.aux)
- ) 
+{d:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./comparison.jp
+g>]
+<result.jpg, id=13, 702.625pt x 526.96875pt>
+File: result.jpg Graphic file (type jpg)
+<use result.jpg>
+Package pdftex.def Info: result.jpg  used on input line 123.
+(pdftex.def)             Requested size: 375.80544pt x 281.86519pt.
+<laplacian.jpg, id=14, 702.625pt x 526.96875pt>
+File: laplacian.jpg Graphic file (type jpg)
+<use laplacian.jpg>
+Package pdftex.def Info: laplacian.jpg  used on input line 131.
+(pdftex.def)             Requested size: 375.80544pt x 281.86519pt.
+ [2 <./result.jpg>] [3 <./laplacian.jpg>] (./hw13.aux) ) 
 Here is how much of TeX's memory you used:
- 6983 strings out of 480608
- 99223 string characters out of 5907536
- 349963 words of memory out of 5000000
- 22735 multiletter control sequences out of 15000+600000
+ 6971 strings out of 480608
+ 99017 string characters out of 5907536
+ 347964 words of memory out of 5000000
+ 22725 multiletter control sequences out of 15000+600000
  544548 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,45p,259b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
-<d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><d:/texlive/2020/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2020/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/texliv
-e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/texlive/2020/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb>
-Output written on hw12.pdf (3 pages, 544282 bytes).
+ 41i,8n,45p,231b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/texlive/2020/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx12.pfb><d:/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+d:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/texlive
+/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/texlive/2020/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb><d:/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msam10.pfb>
+Output written on hw13.pdf (3 pages, 200305 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
